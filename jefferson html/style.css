@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 900px;
+    background-color: white;
+    border: 15px solid #d8d8e8;
+}
+
+/* HEADER */
+
+header {
+    background-color: #021b42;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #d6a23a;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d6a23a;
+}
+
+/* SOBRE */
+
+.sobre {
+    background-color: #031d44;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 40px 60px;
+    justify-content: column;
+}
+
+.foto img {
+    width: 140px;
+    height: 140px;
+    border-radius: 40px;
+    border: 3px solid #d6a23a;
+    object-fit: cover;
+}
+
+.texto {
+    margin-left: 60px;
+}
+
+.texto h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.texto h1 span {
+    color: #d6a23a;
+}
+
+.texto h3 {
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.texto p {
+    max-width: 400px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+/* HABILIDADES */
+
+.habilidades {
+    padding: 35px;
+    text-align: center;
+}
+
+.habilidades h2 {
+    margin-bottom: 35px;
+    font-size: 18px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.skill {
+    text-align: center;
+}
+
+.skill i {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    font-weight: bold;
+}
+
+/* CORES DOS ÍCONES */
+
+.fa-html5 {
+    color: #e34f26;
+}
+
+.fa-css3-alt {
+    color: #1572b6;
+}
+
+.fa-github {
+    color: #000;
+}
+
+.fa-figma {
+    color: #a259ff;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #031d44;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+footer div {
+    text-align: center;
+    font-size: 14px;
+}
+
+footer i {
+    margin-bottom: 8px;
+    font-size: 22px;
+}
+
+.redes i {
+    font-size: 28px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.redes i:hover {
+    color: #d6a23a;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+
+    .sobre {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .skills {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
